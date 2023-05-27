@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background:rgba(24, 36, 53, 0.5);
+    backdrop-filter: blur(10px);
+    border: white;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 5px 5px 10px black;
+    color: white;
+}
+.container1 {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container2 {
+    display: flex;
+    background-image: url(shubham.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0f0f1a;
+    height: 100vh;
+}
+.container3 {
+    height: 100vh;
+}
+.container4 {
+    background-color: rgba(235, 240, 255, 1);
+    background-image: linear-gradient(180deg, rgba(235, 240, 255, 1) 0%, rgba(142, 152, 168, 1) 100%);
+    height: 100vh;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background:rgba(186, 215, 255, 0.5);
+    color: black;
+    font-weight: bold;
+}
+#plate {
+    height: 50%;
+    width: 50%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #CFD2CD;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transform: scale(0.8);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+    background:rgba(186, 215, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border: white;
+    border-style: solid;
+    border-width: 0.5px;
+    box-shadow: 5px 5px 10px black;
+}
+#plate:hover {
+    display: flex;
+    cursor: pointer;
+    transform: scale(1);
+}
+#plate-txt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    color: white;
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    overflow: hidden;
+    height: auto;
+}
+#bar {
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: red;
+    background:rgba(24, 36, 53, 0.5);
+    backdrop-filter: blur(10px);
+    border: white;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    width: 70%;
+}
+.nav-ul a{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+.nav-ul li {
+    list-style: none;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
