@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
 nav {
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,42 +35,109 @@ nav {
     font-weight: bold;
 }
 .container2 {
+    background-attachment: fixed;
     display: flex;
-    background-image: url(shubham.jpg);
+    background-image: url(mario.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #0f0f1a;
     height: 100vh;
+    font-weight: bold;
 }
 .container3 {
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
 }
 .container4 {
-    background-color: rgba(235, 240, 255, 1);
-    background-image: linear-gradient(180deg, rgba(235, 240, 255, 1) 0%, rgba(142, 152, 168, 1) 100%);
-    height: 100vh;
+    height: 150vh;
+    background-attachment: fixed;
+    display: flex;
+    background-image: url(8machine.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0f0f1a;
+    width: 100%;
 }
 .container-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background:rgba(186, 215, 255, 0.5);
     color: black;
     font-weight: bold;
+    background-color: lightgray;
 }
-#plate {
-    height: 50%;
-    width: 50%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: #CFD2CD;
+.disc {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+.bar {
+    width: 100%;
+    height: 70%;
+    background:rgba(24, 36, 53, 0.5);
+    backdrop-filter: blur(10px);
+    border: white;
+    border-style: solid;
+    border-width: 0.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+    gap: 15%;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+#plate-content1 {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px 20px 20px 20px;
+    background:rgba(24, 36, 53, 0.5);
+    width: 50%;
+    height: 200px;
+    scale: 1;
+    transition: 0.2s ease-in-out;
+
+}
+#plate-content2 {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px 20px 20px 20px;
+    background:rgba(24, 36, 53, 0.5);
+    width: 30%;
+    height: 200px;
+    scale: 1;
+    transition: 0.2s ease-in-out;
+ 
+}
+#plate-content1:hover, #plate-content2:hover {
+    transition: 0.2s ease-in-out;
+    scale: 1.1;
+    box-shadow:  0 15px 25px rgba(0,0,0,0.6);
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4;
+}
+#plate {
+    z-index: 1;
+    height: 50%;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #CFD2CD;
+    display: flex;
     transform: scale(0.8);
     box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
     transition: all 0.3s ease;
@@ -95,18 +167,25 @@ nav {
     overflow: hidden;
     height: auto;
 }
-#bar {
+#picture1 {
     display: flex;
+    height: 100%;
     width: 100%;
-    height: 5%;
-    background-color: red;
-    background:rgba(24, 36, 53, 0.5);
-    backdrop-filter: blur(10px);
-    border: white;
-    border-style: solid;
-    border-width: 0.5px;
+    padding: 30px;
+    justify-content: center;
 }
-
+#picture2 {
+    height: 100%;
+    width: 50%;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    background-repeat: no-repeat;
+    background-image: url(visax.jpg);
+    display: flex;
+    background-size: cover;
+}
+#paragraph {
+    padding: 0px 0px 0px 100px;
+}
 .nav-ul {
     display: flex;
     justify-content: flex-end;
@@ -123,17 +202,3 @@ nav {
 .nav-ul li {
     list-style: none;
 }
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* vnmfgj,dkxhl.
-feDiffuseLightingdfgdfg
-
-dfgdfgd
-dgfgdfgd */
